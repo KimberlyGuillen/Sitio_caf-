@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café para todos</title>
+    <link rel="stylesheet" href="css/diseño.css">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">ECO Logistics</a>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#">
+                <img src="https://plus.unsplash.com/premium_vector-1734580686443-2da35e7c5467?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxjb2ZmZSUyMGxvZ298ZW58MHx8MHx8fDA%3D" 
+                     alt="Logo">Cafeteria Kitty
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -29,15 +39,11 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Residuos Logísticos</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Logistica Inversa</a>
-                </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li> 
+               
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -46,41 +52,164 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    El Proceso
+                  Menú
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Logistica Inversa</a>
+                      <a class="dropdown-item" href="productos.html">Desayuno</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Galería de Fotos</a>
+                      <a class="dropdown-item" href="productos.html">Postres</a>
                     </li>
+                    <li>
+                        <a class="dropdown-item" href="productos.html">Bebidas</a>
+                      </li>
                   </ul>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contactanos</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="#container">Sobre Nosotros</a>
+                    
+                      </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Buscar"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Buscar
-                </button>
-              </form>
+              
+              
             </div>
           </div>
         </nav>
       </header>
       <main>
-        
+        <!--Carrusel-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          
+            <div class="carousel-inner">
+              <!-- Primera imagen -->
+              <div class="carousel-item active">
+                <img src="https://media.istockphoto.com/id/1467739359/photo/cup-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.jpg?s=612x612&w=0&k=20&c=tE80r7iDn7S9YwIJVuKAm5KmpJPVz5HbRDc975IlKVo=" class="d-block w-100" alt="Café con historia">
+                <div class="carousel-caption text-center">
+                  <h2>50 años de tradición</h2>
+                  <p>Descubre el sabor que nos ha hecho únicos en Tegucigalpa.</p>
+                </div>
+              </div>
+          
+              <!-- Segunda imagen -->
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1396381118/photo/latin-farmer-working-in-the-coffee-harvest-on-a-sunny-day-in-the-field-sifting-coffee-beans.jpg?s=612x612&w=0&k=20&c=eSsqenKtITbKZn3klkhovd-j_POcQ3UnR85tcRmajeI=" class="d-block w-100" alt="Café de origen">
+                <div class="carousel-caption text-center">
+                  <h2>Café de origen</h2>
+                  <p>Cada grano cuenta una historia. Disfruta un café de calidad inigualable.</p>
+                </div>
+              </div>
+          
+              <!-- Tercera imagen -->
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1815542043/photo/high-angle-view-of-friends-meeting-in-cafe-with-a-cup-of-hot-latte-coffee.jpg?s=612x612&w=0&k=20&c=fNCQcfY2pTaBap9RvRtM5BJ32ov8NxfyC6gCJDU_bMo=" class="d-block w-100" alt="Café y conexión">
+                <div class="carousel-caption text-center">
+                  <h2>Un café para cada momento</h2>
+                  <p>Disfruta de un buen café mientras te conectas con el mundo.</p>
+                </div>
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!--Texto e imagen-->
+          <section style="background-color: #ddd; margin-top: 3rem; margin-bottom: 3rem; padding: 2rem 0;">
+            <div class="container" style="max-width: 90%; margin: 0 auto;">
+              <div class="row align-items-center">
+                <!-- Texto a la izquierda -->
+                <div class="col-12 col-md-6 text-md-start text-center px-4">
+                  <h3 class="text-dark">Sobre nosotros...</h3>
+                  <p class="small">
+                    Con más de 50 años de tradición en el corazón de Tegucigalpa, nuestra cafetería se ha convertido en un punto de referencia para quienes buscan calidad y sabor. Nos especializamos en café de origen, cuidadosamente seleccionado y preparado para brindar una experiencia única.
+                  </p>
+                  <p class="small">
+                    Nuestro mercado está dirigido a profesionales y amantes del café que disfrutan de un buen espresso mientras se conectan con el mundo. Queremos ser el lugar donde cada taza cuente una historia.
+                  </p>
+                </div>
+          
+                <!-- Imagen a la derecha -->
+                <div class="col-12 col-md-6">
+                  <picture>
+                    <source srcset="https://media.istockphoto.com/id/1403040211/photo/close-up-of-espresso-pouring-from-coffee-machine-flowing-into-the-coffee-cup-make-coffee-for.jpg?s=612x612&w=0&k=20&c=oFu8cuR6FL1s0smYAVTzHROR9kwcgA9gtAtWGB2qqqY=" media="(min-width: 720px)">
+                    <img class="w-100 rounded object-fit-cover" src="https://media.istockphoto.com/id/1403040211/photo/close-up-of-espresso-pouring-from-coffee-machine-flowing-into-the-coffee-cup-make-coffee-for.jpg?s=612x612&w=0&k=20&c=oFu8cuR6FL1s0smYAVTzHROR9kwcgA9gtAtWGB2qqqY=" alt="Café artesanal">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <!--Productos-->
+          <div class="container">
+            <h2 class="text-center mt-5 mb-4 text-bg-secondary p-3">Categorías del menú</h2>
+            <div class="row justify-content-center">
+              <!-- Tarjeta 1 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto" style="max-width: 18rem; height: 100%;">
+                  <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHYlQzMlQUR2ZXJlc3xlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top" alt="Desayuno" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Desayuno</h5>
+                    <p class="card-text">
+                        Empieza tu día con energía disfrutando de nuestros desayunos preparados con ingredientes frescos y naturales.                    </p>
+                    <a href="productos.html" class="btn text-bg-secondary p-3 mt-auto">Ver más...</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto" style="max-width: 18rem; height: 100%;">
+                  <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHYlQzMlQUR2ZXJlc3xlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top" alt="Postres" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Postres</h5>
+                    <p class="card-text">
+                        Perfectos para acompañar un café o darte un gusto después de una comida.                    </p>
+                    <a href="productos.html" class="btn text-bg-secondary p-3 mt-auto">Ver más</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto" style="max-width: 18rem; height: 100%;">
+                  <img src="https://media.istockphoto.com/id/1195730458/photo/coffee-cup-and-woman-hand.jpg?s=612x612&w=0&k=20&c=qFoY2-qjABEG4iSrFVvSZmI_uY4GMNIrz0ocBJ4GiSk="
+                    class="card-img-top" alt="Bebidas" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Bebidas</h5>
+                    <p class="card-text">
+                        Desde cafés artesanales hasta jugos naturales y cócteles únicos que te encantarán.                    </p>
+                    <a href="productos.html" class="btn text-bg-secondary p-3 mt-auto">Ver más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
       </main>
+      <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p>&copy; 2025 Kitty. Todos los derechos reservados.</p>
+          <p>
+            <a href="index.html" class="text-white me-3">Inicio</a>
+            <a href="productos.html" class="text-white">Menú</a>
+          </p>
+        </div>
+      </footer>
+      
 </body>
 </html>
