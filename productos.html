@@ -1,96 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café para todos</title>
-    <link rel="stylesheet" href="css/diseño.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café para todos</title>
+  <link rel="stylesheet" href="css/diseño.css">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 
+  
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" 
-                     alt="Logo">Cafeteria Kitty
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li> 
-               
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  Menú
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="productos.html">Desayuno</a>
+  <header>
+      <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#">
+              <img src="logo.png" 
+                   alt="Logo">Cafeteria Kitty
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li> 
+             
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Menú
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="productos.html">Desayuno</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="productos.html">Postres</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="productos.html">Bebidas</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="productos.html">Postres</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="productos.html">Bebidas</a>
-                      </li>
-                  </ul>
-                </li>
+                </ul>
+              </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#container">Sobre Nosotros</a>
-                    
-                      </li>
-              </ul>
-              
-              
-            </div>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#container">Sobre Nosotros</a>
+                  
+                    </li>
+            </ul>
+            
+            
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
       <main>
-        <section class="hero-panel" style="position: relative; height: 400px; background-color: #f7f7f7;">
-            <img src="https://plus.unsplash.com/premium_vector-1724298639112-672809189e64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJUMzJUJBJTIwY29mZmV8ZW58MHx8MHx8fDA%3D" 
-                 alt="Imagen café" 
-                 style="object-fit: cover; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;">
-            <div class="hero-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-                <h1>Bienvenidos a Café Kitty</h1>
+
+        <!--Panel-->
+        <section class="hero-panel " style="position: relative; height: 400px; background-color: #3a2307;">
+      <div class="hero-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                <h1>Menú de Café Kitty</h1>
                 <p>Disfruta del sabor de 50 años de tradición.</p>
             </div>
         </section>
+        <!--Tarjetas Bebidas-->
+
+        <div class="container mt-4">
+          <!-- Categoría: Bebidas -->
+          <h2 class="text-center mb-3">Bebidas</h2>
+          <div class="row ">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/1493990340/es/foto/caf%C3%A9-y-pasteles-en-la-mesa-con-sombras-vegetales.webp?a=1&b=1&s=612x612&w=0&k=20&c=_MV0VdPyC1nZDoCJ2JK_yJY2KK5wJwNyx6HssT_2GEU=" class="card-img-top" alt="Café espresso">
+                      <div class="card-body">
+                        <h3 class="card-title">Café espresso</h3>
+                          <p class="card-text "> Un shot de café puro, intenso y aromático, ideal para los amantes del sabor fuerte.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card border-secundary border-3">
+                  <img src="https://images.unsplash.com/photo-1511723991310-0e859b96b2e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FwdWNoaW5vJTIwY29mZmV8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Capuchino">
+                      <div class="card-body">
+                        <h3 class="card-title">Capuchino</h3>
+                          <p class="card-text">Deliciosa combinación de espresso, leche vaporizada y espuma cremosa.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card border-secundary border-3">
+                  <img src="https://media.istockphoto.com/id/2173199535/es/foto/homemade-hot-chocolate-for-the-christmas.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZBGUep8P8VMwjq8Clv6dImLI24_Qp0JBGL5k2OfCmhs=" class="card-img-top" alt="Chocolate Caliente">
+                      <div class="card-body">
+                        <h3 class="card-title">Chocolate Caliente</h3>
+                          <p class="card-text">Elaborado con chocolate derretido y leche caliente, perfecto el alma.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card border-secundary border-3">
+                  <img src="https://media.istockphoto.com/id/1136578637/es/foto/hot-london-fog-tea-drink.webp?a=1&b=1&s=612x612&w=0&k=20&c=j0pnHUFOsP95QUAsUd-tIWLcK55YLNDDpOKUGAk_T5k=" class="card-img-top" alt="Latte de Vainilla">
+                      <div class="card-body">
+                        <h3 class="card-title">Latte de Vainilla</h3>
+                          <p class="card-text">Café espresso con leche al vapor y un sutil toque de vainilla, sabor dulce y suave.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card border-secundary border-3">
+                  <img src="https://media.istockphoto.com/id/2149722483/es/foto/indian-masala-chai-tea-spiced-tea-with-milk-and-spices.webp?a=1&b=1&s=612x612&w=0&k=20&c=jyO8FL2PZZj4TWz3yYBRZILoLH5RG1XN_EZY4yBHpck=" class="card-img-top" alt="Té Chai">
+                      <div class="card-body">
+                        <h3 class="card-title">Té Chai</h3>
+                          <p class="card-text">Infusión especiada de té negro con canela, jengibre y clavo, mezclado con leche.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Categoría: Postres -->
+          <h2 class="text-center mt-5 mb-3">Postres</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/2152360084/es/foto/slice-of-strawberry-cheesecake.webp?a=1&b=1&s=612x612&w=0&k=20&c=y42pgBtIMQge39CUhT5kO62NVQOFc3ko0WzdNj8oBGw=" class="card-img-top" alt="Desayuno 1">
+                      <div class="card-body">
+                        <h3 class="card-title">Cheesecake de Fresa</h3>
+                          <p class="card-text">Suave y cremoso pastel de queso con una base crujiente y cubierta de fresas frescas.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/160946353/es/foto/brownie-con-helado-de-vainilla.webp?a=1&b=1&s=612x612&w=0&k=20&c=fQ5yWCq_i-bzdyO25g9obb6suExnXZNuuaiPDyZzPtk=" class="card-img-top" alt="Desayuno 2">
+                      <div class="card-body">
+                        <h3 class="card-title">Brownie con Helado</h3>
+                          <p class="card-text">Brownie de chocolate oscuro, esponjoso y con trozos de nuez con una bola de helado de vainilla.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.webp?a=1&b=1&s=612x612&w=0&k=20&c=G3D4_wY9D_CSTY5favkMC6kFhcnS5M97rjZ-sJBqHDs=" class="card-img-top" alt="Desayuno 3">
+                      <div class="card-body">
+                        <h3 class="card-title">Tarta de Manzana</h3>
+                          <p class="card-text">Clásica tarta con relleno de manzanas caramelizadas y una base crujiente, espolvoreada con canela.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/478065785/es/foto/bollos-de-ar%C3%A1ndanos.webp?a=1&b=1&s=612x612&w=0&k=20&c=uQYxsl_g2anAEWmFab4jhFyN-61e2sjKHSZgWLIc6-Y=" class="card-img-top" alt="Desayuno 4">
+                      <div class="card-body">
+                        <h3 class="card-title">Muffin de Arándanos </h3>
+                          <p class="card-text">Muffin esponjoso con arándanos frescos que explotan con cada bocado.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/1382276576/es/foto/croissant-de-mousse-de-chocolate-belga.webp?a=1&b=1&s=612x612&w=0&k=20&c=KFgYqCpwEcr46U4egOmWyY2w7tSBf5Kstblc8lAlJN8=" class="card-img-top" alt="Desayuno 5">
+                      <div class="card-body">
+                        <h3 class="card-title">Croissant de Chocolate</h3>
+                          <p class="card-text">Crujiente y hojaldrado croissant relleno de chocolate derretido.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Categoría: Desayuno -->
+          <h2 class="text-center mt-5 mb-3">Desayunos</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/637154032/es/foto/tostadas-francesas-con-jarabe-de-arce-y-bayas.webp?a=1&b=1&s=612x612&w=0&k=20&c=fv7Dh8qVPJzQa7T40kD9weQMfu_st8iYlWic9nXyhyE=" class="card-img-top" alt="Postre 1">
+                      <div class="card-body">
+                        <h3 class="card-title">Tostadas Francesas con Miel</h3>
+                          <p class="card-text">Rebanadas de pan doradas en huevo y canela, servidas con miel y frutas frescas.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://media.istockphoto.com/id/472206369/es/foto/de-omeletes.webp?a=1&b=1&s=612x612&w=0&k=20&c=jSc9xHCu2thlWmiaHjHKMDWXjmOHH_yAtQnFVY7MkWo=" class="card-img-top" alt="Postre 2">
+                      <div class="card-body">
+                        <h3 class="card-title">Omelette de Jamón y Queso</h3>
+                          <p class="card-text">Omelette suave y esponjoso relleno de queso derretido y trozos de jamón ahumado.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://plus.unsplash.com/premium_photo-1671559270200-e8743d279432?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UyVDMyVBMW5kd2ljaCUyMGRlJTIwSHVldm8lMjB5JTIwVG9jaW5vfGVufDB8fDB8fHww" class="card-img-top" alt="Postre 3">
+                      <div class="card-body">
+                        <h3 class="card-title">Sándwich de Huevo y Tocino </h3>
+                          <p class="card-text">Pan tostado relleno de huevo revuelto, crujiente tocino y queso derretido.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://images.unsplash.com/photo-1685156328658-da6116852b4c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UGFucXVlcXVlcyUyMGNvbiUyMEZydXRhcyUyMHklMjBDcmVtYXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Postre 4">
+                      <div class="card-body">
+                        <h3 class="card-title">Panqueques con Frutas y Crema</h3>
+                          <p class="card-text">Panqueques esponjosos servidos con fresas, plátano, crema batida y un toque de miel.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <div class="card border-secundary border-3">
+                      <img src="https://plus.unsplash.com/premium_photo-1666672952919-b12ecc4baef9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8WW9ndXIlMjBjb24lMjBHcmFub2xhJTIweSUyME1pZWx8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Postre 5">
+                      <div class="card-body">
+                        <h3 class="card-title">Yogur con Granola y Miel</h3>
+                          <p class="card-text">Refrescante combinación de yogur cremoso, granola crujiente y un toque de miel natural.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+
     </main>
     
+
 <footer class=" text-white text-center py-3">
         <style>
             footer {
@@ -106,4 +265,6 @@
         </div>
       </footer>
       
+     
 </body>
+</html>
